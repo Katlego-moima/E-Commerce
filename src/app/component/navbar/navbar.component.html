@@ -1,22 +1,22 @@
-<header class="header">
-  <a href="" class="logo">CSS Nav</a>
+<header class="navbar">
+  <a href="" class="logo">Katsy's</a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
     <li>
-      <a href="#work"><fa-icon [icon]="faUser"></fa-icon> Account</a>
+      <a routerLink="/account"><fa-icon [icon]="faUser"></fa-icon> Account</a>
     </li>
     <li>
-      <a href="#work"><fa-icon [icon]="faStar"></fa-icon> Wishlist</a>
+      <a routerLink="/wishlist"><fa-icon [icon]="faStar"></fa-icon> Wishlist</a>
     </li>
     <li>
-      <a href="#about"><fa-icon [icon]="faCrosshairs"></fa-icon> Checkout</a>
+      <a routerLink="/orders"><fa-icon [icon]="faReceipt"></fa-icon> Orders</a>
     </li>
     <li>
-      <a href="#careers"><fa-icon [icon]="faShoppingCart"></fa-icon> Cart</a>
+      <a routerLink="/cart"><fa-icon [icon]="faShoppingCart"></fa-icon> Cart</a>
     </li>
     <li>
-      <a href="#contact"><fa-icon [icon]="faLock"></fa-icon> Login</a>
+      <a routerLink="/login"><fa-icon [icon]="faLock"></fa-icon> Login</a>
     </li>
   </ul>
 </header>
