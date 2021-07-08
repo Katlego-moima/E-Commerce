@@ -14,6 +14,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AccountComponent } from './views/account/account.component';
 import { ProductComponent } from './component/product/product.component';
 import { DropdownComponent } from './component/dropdown/dropdown.component';
+import { LoginCardComponent } from './component/login-card/login-card.component';
+import { RegisterCardComponent } from './component/register-card/register-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { DropdownComponent } from './component/dropdown/dropdown.component';
     NavbarComponent,
     AccountComponent,
     ProductComponent,
-    DropdownComponent
+    DropdownComponent,
+    LoginCardComponent,
+    RegisterCardComponent
   ],
   imports: [
     BrowserModule,
