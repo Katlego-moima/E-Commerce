@@ -12,6 +12,8 @@ import { ProductsComponent } from './views/products/products.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AccountComponent } from './views/account/account.component';
+import { ProductComponent } from './component/product/product.component';
+import { DropdownComponent } from './component/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AccountComponent } from './views/account/account.component';
     WishlistComponent,
     ProductsComponent,
     NavbarComponent,
-    AccountComponent
+    AccountComponent,
+    ProductComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,

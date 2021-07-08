@@ -1,1 +1,25 @@
-<p>products works!</p>
+<div class="filters">
+  <p>
+    <strong
+      >{{ productsToDisplay.length }} item{{
+        productsToDisplay.length !== 1 ? "s" : ""
+      }}
+      found</strong
+    >
+  </p>
+  <app-dropdown
+    [contentType]="'Category'"
+    [dropdownContent]="productCategories"
+    (onSelectFilter)="selectFilter($event)"
+  ></app-dropdown>
+  <app-dropdown
+    [contentType]="'Department'"
+    [dropdownContent]="productDepartments"
+    (onSelectFilter)="selectFilter($event)"
+  ></app-dropdown>
+</div>
+<div class="clear-fix"></div>
+<app-product
+  *ngFor="let product of productsToDisplay"
+  [product]="product"
+></app-product>

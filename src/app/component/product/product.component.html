@@ -1,0 +1,23 @@
+<div class="product-card">
+  <div class="product-tumb">
+    <img src="https://i.imgur.com/xdbHo4E.png" alt="" />
+  </div>
+  <div class="product-details">
+    <span class="product-catagory"
+      >{{ product.department }}, {{ product.category }}</span
+    >
+    <h4>
+      <a href="">{{ product.name }}</a>
+    </h4>
+    <p>
+      {{ product.description }}
+    </p>
+    <div class="product-bottom-details">
+      <div class="product-price">R{{ product.price }}</div>
+      <div class="product-links">
+        <a href=""><fa-icon [icon]="faHeart"></fa-icon></a>
+        <a href=""><fa-icon [icon]="faShoppingCart"></fa-icon></a>
+      </div>
+    </div>
+  </div>
+</div>
