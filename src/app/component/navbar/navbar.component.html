@@ -1,1 +1,22 @@
-<p>navbar works!</p>
+<header class="header">
+  <a href="" class="logo">CSS Nav</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li>
+      <a href="#work"><fa-icon [icon]="faUser"></fa-icon> Account</a>
+    </li>
+    <li>
+      <a href="#work"><fa-icon [icon]="faStar"></fa-icon> Wishlist</a>
+    </li>
+    <li>
+      <a href="#about"><fa-icon [icon]="faCrosshairs"></fa-icon> Checkout</a>
+    </li>
+    <li>
+      <a href="#careers"><fa-icon [icon]="faShoppingCart"></fa-icon> Cart</a>
+    </li>
+    <li>
+      <a href="#contact"><fa-icon [icon]="faLock"></fa-icon> Login</a>
+    </li>
+  </ul>
+</header>
