@@ -1,0 +1,16 @@
+<label class="dropdown">
+  <div class="dd-button">{{ selected ? selected : contentType }}</div>
+  <input type="checkbox" class="dd-input" id="test" />
+  <ul class="dd-menu">
+    <li
+      *ngFor="let item of dropdownContent"
+      (click)="selectFilter(item, contentType)"
+    >
+      {{ item.description }}
+    </li>
+    <li class="divider"></li>
+    <li (click)="selectFilter({ id: 0, description: 'All' }, contentType)">
+      All
+    </li>
+  </ul>
+</label>
