@@ -1,0 +1,20 @@
+<div class="form">
+  <h1>Register</h1>
+  <hr />
+  <form class="register-form">
+    <input
+      type="text"
+      placeholder="Name"
+      (blur)="checkName($event)"
+      [ngClass]="{ 'field-invalid': true }"
+    />
+    <input type="text" placeholder="Email Address" />
+    <input type="text" placeholder="Confirm Email Address" />
+    <input type="password" placeholder="Password" />
+    <input type="password" placeholder="Confirm Password" />
+    <button>Register</button>
+    <p class="message">
+      Already registered? <a routerLink="/login">Sign In</a>
+    </p>
+  </form>
+</div>
