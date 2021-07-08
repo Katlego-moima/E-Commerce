@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 120px auto;
+}

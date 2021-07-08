@@ -10,6 +10,7 @@ import { LoginComponent } from './views/login/login.component';
 import { WishlistComponent } from './views/wishlist/wishlist.component';
 import { ProductsComponent } from './views/products/products.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavbarComponent } from './component/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
