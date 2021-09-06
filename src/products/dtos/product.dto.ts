@@ -1,8 +1,6 @@
 export class ProductDTO {
-    readonly name: string;
-    readonly image: string;
-    readonly description: string;
-    readonly price: number;
-    
-   
+    name: string;
+    image: string;
+    description: string;
+    price: number; 
 }
