@@ -16,6 +16,8 @@ import { ProductComponent } from './component/product/product.component';
 import { DropdownComponent } from './component/dropdown/dropdown.component';
 import { LoginCardComponent } from './component/login-card/login-card.component';
 import { RegisterCardComponent } from './component/register-card/register-card.component';
+import { ConnectService } from './services/connect.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,9 +38,10 @@ import { RegisterCardComponent } from './component/register-card/register-card.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ConnectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

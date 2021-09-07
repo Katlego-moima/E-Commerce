@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Product } from 'src/app/interfaces/Product';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { ConnectService } from 'src/app/services/connect.service';
 
 @Component({
   selector: 'app-product',
@@ -23,9 +24,16 @@ export class ProductComponent implements OnInit {
     departmentId: 0,
     department: "",
   };
-  constructor() { }
+  pr: any = [];
+  constructor(public connect: ConnectService) { }
 
   ngOnInit(): void {
+    this.connect.getProducts().subscribe((data: any)=>{
+      this.pr = data;
+      console.log(this.pr);
+      console.log("---------------------------------------------");
+      
+    });
   }
 
 }
